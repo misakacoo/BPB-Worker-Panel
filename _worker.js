@@ -781,12 +781,11 @@ const getNormalConfigs = async (env, hostName, client) => {
     const { cleanIPs, proxyIP } = proxySettings;
     const resolved = await resolveDNS(hostName);
     const Addresses = [
-        hostName,
         ...(cleanIPs ? cleanIPs.split(',') : []),
     ];
 
     Addresses.forEach((addr) => {
-        let remark = `${addr}`;
+        let remark = `💦 BPB - ${addr}`;
         remark = remark.length <= 30 ? remark : `${remark.slice(0,29)}...`;
 
         vlessWsTls += 'vless' + `://${userID}@${addr}:443?encryption=none&security=tls&type=ws&host=${
@@ -983,7 +982,6 @@ const getFragmentConfigs = async (env, hostName, client) => {
 
     const resolved = await resolveDNS(hostName);
     const Addresses = [
-        hostName,
         ...(cleanIPs ? cleanIPs.split(",") : []),
     ];
 
@@ -1106,7 +1104,6 @@ const getSingboxConfig = async (env, hostName) => {
 
     const resolved = await resolveDNS(hostName);
     const Addresses = [
-        hostName,
         ...(cleanIPs ? cleanIPs.split(",") : []),
     ];
 
