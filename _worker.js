@@ -818,6 +818,13 @@ const getNormalConfigs = async (env, hostName, client) => {
 
 const generateRemark = (index, port) => {
     let remark = '';
+    switch (index) {
+        case 0:
+            remark = `Clean IP_${index - 1} : ${port}`;
+            break;
+    }
+
+    return remark;
 }
 
 const extractVlessParams = async (vlessConfig) => {
