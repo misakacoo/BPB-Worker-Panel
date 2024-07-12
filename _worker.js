@@ -823,12 +823,6 @@ const getNormalConfigs = async (env, hostName, client) => {
 const generateRemark = (index, port) => {
     let remark = '';
     switch (index) {
-        case 0:
-        case 1:
-        case 2:
-        case 3:
-        case 4:
-        case 5:
             remark = `Clean IP_${index - 5} : ${port}`;
             break;
     }
