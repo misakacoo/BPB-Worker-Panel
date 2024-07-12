@@ -823,8 +823,8 @@ const getNormalConfigs = async (env, hostName, client) => {
 const generateRemark = (index, port) => {
     let remark = '';
     switch (index) {
-        default:
-            remark = `💦 BPB - Clean IP_${index - 1} : ${port}`;
+        case 0:
+            remark = `Clean IP_${index - 5} : ${port}`;
             break;
     }
 
