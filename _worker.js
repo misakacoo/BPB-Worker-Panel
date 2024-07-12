@@ -820,7 +820,7 @@ const generateRemark = (index, port) => {
     let remark = '';
     switch (index) {
         case 0:
-            remark = `Clean IP_${index - 5} : ${port}`;
+            remark = `Clean IP_${index} : ${port}`;
             break;
     }
 
