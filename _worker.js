@@ -818,12 +818,6 @@ const getNormalConfigs = async (env, hostName, client) => {
 
 const generateRemark = (index, port) => {
     let remark = '';
-    switch (index) {
-        case 0:
-            break;
-    }
-
-    return remark;
 }
 
 const extractVlessParams = async (vlessConfig) => {
